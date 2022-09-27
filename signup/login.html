@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
-    <title>Sign In Form</title>
+    <title>Login Form</title>
     <link rel="shortcut icon" type="image/png" href="rgpv.jpg">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -31,10 +31,12 @@ body {
 main.container {
     background: white;
     min-width: 320px;
-    min-height: 50vh;
+    min-height: 40vh;
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 8px;
+    margin-top: 0px;
+    margin-left: -20px;
 }
 
 main h2 {
@@ -47,7 +49,7 @@ main h2::before {
     content: '';
     position: absolute;
     height: 2px;
-    width: 100px;
+    width: 80px;
     bottom: -2px;
     left: -7px;
     border-radius: 4px;
@@ -70,20 +72,19 @@ form .input-field:first-child {
 .input-field .underline::before {
     content: '';
     position: absolute;
-    height: 1.5px;
+    height: 1px;
     width: 100%;
-    bottom: -1px;
+    bottom: -5px;
     left: 0;
     background: rgba(0, 0, 0, 0.2);
-    
 }
 
 .input-field .underline::after {
     content: '';
     position: absolute;
-    height: 1.5px;
+    height: 1px;
     width: 100%;
-    bottom: -1px;
+    bottom: -5px;
     left: 0;
     background: linear-gradient(45deg, #8e2de2, #4a00e0);
     transform: scaleX(0);
@@ -127,31 +128,23 @@ form input[type="submit"]:hover {
 
 
     </style>
-    
 </head>
 <body>
     <main class="container">
-        <h2>Sign In</h2>
+        <h2>Login</h2>
         <form action="">
             <div class="input-field">
                 <input type="text" name="username" id="username"
-                    placeholder="Enter Username">
-                <div class="underline"></div>
-            </div>
-            
-            <div class="input-field">
-                <input type="password" name="password" id="password"
-                    placeholder="Enter Password">
+                    placeholder="Username">
                 <div class="underline"></div>
             </div>
             <div class="input-field">
                 <input type="password" name="password" id="password"
-                    placeholder="Enter confirm Password">
+                    placeholder="Password">
                 <div class="underline"></div>
             </div>
-                    <A href="login.html">
-                        <input type="submit" value="Continue..." > 
-                   </A>
+
+            <input type="submit" value="Continue...">
         </form>
 
     </main>
