@@ -1,2 +1,2 @@
 # Feedback_Bot
-Feedback provider through Bot -> PIE chart generator using matplotlib & numpy -> "face recognition" security using python frameworks and libraries
+Feedback provider through Bot -> PIEchart generator using matplotlib & numpy -> "Face Recognition" security using python frameworks and libraries.
